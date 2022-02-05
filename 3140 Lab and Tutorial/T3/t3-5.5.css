@@ -1,0 +1,19 @@
+div{
+	width: 100px;
+	height: 100px;
+}
+#div1{
+	border: 3px black;
+	border-radius: 10px;
+	background-color: darkred;
+}
+#div2{
+	border: 3px black;
+	border-radius: 50px;
+	background-color: lightgoldenrodyellow;
+}
+#div3{
+	border: 3px black;
+	border-radius: 100px;
+	background-color: blueviolet;
+}

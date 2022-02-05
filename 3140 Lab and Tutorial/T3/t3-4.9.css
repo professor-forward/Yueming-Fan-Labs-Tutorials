@@ -1,0 +1,6 @@
+button{
+	border: 5px solid blue;
+	background-color: darkgrey;
+	color: black;
+}
+a:hover button{color: red;}

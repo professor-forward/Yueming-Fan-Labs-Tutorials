@@ -1,0 +1,7 @@
+#div1{
+	width: 500px;
+	height: 500px;
+	background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

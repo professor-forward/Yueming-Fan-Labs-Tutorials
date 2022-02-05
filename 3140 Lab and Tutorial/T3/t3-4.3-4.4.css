@@ -1,0 +1,13 @@
+/*4.3*/
+*{
+	font-size: 1.5em;
+	color: red;
+}
+
+/*4.4*/
+body{
+	background-image: url("css.jpg");
+	background-position: center;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+}
