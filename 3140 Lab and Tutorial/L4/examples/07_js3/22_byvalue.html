@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(name, o)
+{
+  document.writeln(name + " = " + o + "<br>");
+}
+
+function changeInt(i) 
+{
+  i += 1;
+}
+
+function changeString(str)
+{
+  str += " a change";
+}
+
+function changeBoolean(b)
+{
+  b = !b;
+}
+
+var x;
+
+x = 99;
+show("x before", x);
+changeInt(x);
+show("x after", x);
+
+x = "abc";
+show("x before", x);
+changeString(x);
+show("x after", x);
+
+x = true;
+show("x before", x);
+changeBoolean(x);
+show("x after", x);
+
+    </script>
+  </body>
+</html>
+
+

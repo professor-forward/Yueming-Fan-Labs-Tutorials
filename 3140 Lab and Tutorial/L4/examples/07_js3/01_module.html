@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+var BankAccount = (function () {
+  var entity = {};
+  entity.balance = 0.0;
+  entity.fees = 1.00;
+
+  function applyTransaction(delta) { 
+    entity.balance = entity.balance + delta - entity.fees;
+  }
+
+  entity.showBalance = function() {
+    document.writeln("Balance " + this.balance + "<br />");
+  }
+
+  entity.deposit = function(amount) {
+    document.writeln("Deposit " + amount + "<br />");
+    applyTransaction(amount);
+    this.showBalance();
+    return this.balance;
+  }
+
+  entity.withdraw = function(amount) {
+    document.writeln("Withdraw " + amount + "<br />");
+    applyTransaction(-1 * amount);
+    this.showBalance();
+    return this.balance;
+  }
+
+  return entity;
+}());
+
+BankAccount.showBalance();
+BankAccount.deposit(100.0);
+BankAccount.withdraw(10.0);
+
+    </script>
+  </body>
+</html>
+
+

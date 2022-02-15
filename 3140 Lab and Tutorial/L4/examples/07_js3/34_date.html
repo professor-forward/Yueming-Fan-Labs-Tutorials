@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(fn)
+{
+  var answer = eval(fn);
+  document.writeln(fn + " = " + answer + "<br>");
+}
+
+show('new Date()');
+show('(new Date()).getFullYear()');
+show('(new Date()).getUTCFullYear()');
+show('(new Date()).getMonth()');
+show('(new Date()).getDate()');
+show('(new Date()).getDay()');
+show('(new Date()).getHours()');
+show('(new Date()).getUTCHours()');
+show('(new Date()).getMinutes()');
+show('(new Date()).getSeconds()');
+show('(new Date()).getMilliseconds()');
+show('(new Date()).getTime()');
+show('(new Date()).getTimezoneOffset()');
+show('new Date((new Date()).setMinutes(59))');
+
+new Date();
+(new Date()).getFullYear();
+(new Date()).getUTCFullYear();
+(new Date()).getMonth();
+(new Date()).getDate();
+(new Date()).getDay();
+(new Date()).getHours();
+(new Date()).getUTCHours();
+(new Date()).getMinutes();
+(new Date()).getSeconds();
+(new Date()).getMilliseconds();
+(new Date()).getTime();
+(new Date()).getTimezoneOffset();
+new Date((new Date()).setMinutes(59));
+    </script>
+  </body>
+</html>
+
+

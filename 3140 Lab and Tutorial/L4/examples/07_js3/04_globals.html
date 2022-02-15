@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function beCareful() {
+  x = 99;
+}
+
+function buggyInc(y) {
+  return x + 1;
+}
+
+beCareful();
+var answer = buggyInc(35);
+
+document.writeln("buggyInc(35) = " + answer + "<br>");
+
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(name, o)
+{
+  document.writeln(name + " = " + o + "<br>");
+}
+
+function showObj(name, o)
+{
+  document.writeln(name + " = " + o.name + ", "+ o.colour +"<br>");
+}
+
+function changeArray(arr) 
+{
+  arr[0] = "candy";
+  arr.push("oranges");
+}
+
+function changeObject(o)
+{
+  o.name = "James";
+  o.colour = "green";
+}
+
+var x;
+
+x = ["apples"];
+show("x before", x);
+changeArray(x);
+show("x after", x);
+
+x = {"name": "Andrew"};
+showObj("x before", x);
+changeObject(x);
+showObj("x after", x);
+
+    </script>
+  </body>
+</html>
+
+

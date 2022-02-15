@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function showIsNaN(input) 
+{
+  if (isNaN(input)) {
+    document.writeln("Yes, ["+ input +"] is NaN (not a number)<br>");
+  } else {
+    document.writeln("No, ["+ input +"] is not NaN (it's not not a number)<br>");
+  }
+}
+
+showIsNaN(parseInt("abc"));
+showIsNaN("abc");
+showIsNaN(1/0);
+showIsNaN(-1/0);
+showIsNaN(10);
+
+    </script>
+  </body>
+</html>

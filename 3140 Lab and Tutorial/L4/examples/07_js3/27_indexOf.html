@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(name, ele, index)
+{
+  document.writeln(name + " of " + ele + " is " + index + "<br>");
+}
+
+var arr = [40, 8, 40, 320, 40, 57];
+
+show("indexOf(40)", 40, arr.indexOf(40));
+show("lastIndexOf(40)", 40, arr.lastIndexOf(40));
+show("indexOf(8)", 8, arr.indexOf(8));
+show("lastIndexOf(8)", 8, arr.lastIndexOf(8));
+show("indexOf(40, 1)", 40, arr.indexOf(40, 1));
+show("lastIndexOf(40, 1)", 40, arr.lastIndexOf(40, 1));
+show("lastIndexOf(40, 3)", 40, arr.lastIndexOf(40, 3));
+show("indexOf(40, 5)", 40, arr.indexOf(40, 5));
+show("indexOf(40,99)", 40, arr.indexOf(40,99));
+    </script>
+  </body>
+</html>
+
+

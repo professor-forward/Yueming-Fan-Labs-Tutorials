@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+var arr = ["apples", "bananas", "carrots"];
+
+document.writeln("<h3>Method 1</h3>");
+for (var i=0, len = arr.length; i < len; i++) {
+  document.writeln("["+ i +"] = " + arr[i] + "<br>");
+}
+
+document.writeln("<h3>Method 2</h3>");
+for (var i in arr) {
+  document.writeln("["+ i +"] = " + arr[i] + "<br>");
+}
+
+document.writeln("<h3>Method 3 (slow)</h3>");
+arr.forEach(function (ele, i /* optional */){
+  document.writeln("["+ i +"] = " + ele + "<br>");
+})
+
+    </script>
+  </body>
+</html>
+
+

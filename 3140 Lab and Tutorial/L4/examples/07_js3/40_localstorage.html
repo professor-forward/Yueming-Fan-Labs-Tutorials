@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+    <input id="stockTicker" placeholder="Stock Ticker (e.g. AAPL)">
+    <input id="stockPrice" placeholder="Stock Price (120.00)">
+    <button id="add">Add</button>
+
+    <div id="allStocks"></div>
+
+    <script>
+
+      var refreshStocks = function() {
+        var allStocks = document.getElementById("allStocks");
+        if (localStorage.length == 0) {
+          allStocks.innerHTML = "No information about stocks available.";
+        } else {
+          var html = "<table>";
+          for (var i=0, len=localStorage.length; i < len; i++) {
+            var ticker = localStorage.key(i);
+            var price = localStorage.getItem(ticker);
+            html += "<tr><td>"+ ticker +"</td><td>"+ price +"</td></tr>";
+          }
+          html += "</table>";
+          allStocks.innerHTML = html;
+        }
+      }
+
+      document.getElementById("add").onclick = function() {
+        localStorage.setItem(
+          document.getElementById("stockTicker").value,
+          document.getElementById("stockPrice").value
+        );
+        refreshStocks();
+      }
+
+      refreshStocks();
+    </script>
+  </body>
+</html>

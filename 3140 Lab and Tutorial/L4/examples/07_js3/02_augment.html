@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+var Math = (function (Math) {
+  Math.inc = function(num) {
+    return num + 1;
+  }
+  return Math;
+}(Math))
+
+document.writeln("Math.inc(7) = " + Math.inc(7) + "<br>");
+
+    </script>
+  </body>
+</html>
+
+

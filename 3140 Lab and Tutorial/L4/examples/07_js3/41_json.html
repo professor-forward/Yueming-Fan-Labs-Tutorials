@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <input id="ticker" placeholder="Ticker (e.g. AAPL)">
+    <input id="price" placeholder="Price (120.00)">
+    <input id="volume" placeholder="Volume (12M)">
+    <button id="add">Add</button>
+
+    <div id="allStocks">
+    </div>
+
+
+    <script>
+
+      var refreshStocks = function() {
+        var allStocks = document.getElementById("allStocks");
+        if (localStorage.length == 0) {
+          allStocks.innerHTML = "No information about stocks available.";
+        } else {
+          var html = "<table>";
+          html += "<tr><th>Ticker</th><th>Price</th><th>Volume</th></tr>";
+          for (var i=0, len=localStorage.length; i < len; i++) {
+            var ticker = localStorage.key(i);
+            var data = JSON.parse(localStorage.getItem(ticker));
+            html += "<tr><td>"+ ticker +"</td><td>"+ data.price +"</td><td>"+ data.volume +"</td></tr>";
+          }
+          html += "</table>";
+          allStocks.innerHTML = html;
+        }
+      }
+
+      document.getElementById("add").onclick = function() {
+        var data = {
+          "price": document.getElementById("price").value,
+          "volume": document.getElementById("volume").value,
+        };
+        localStorage.setItem(
+          document.getElementById("ticker").value,
+          JSON.stringify(data)
+        );
+        refreshStocks();
+      }
+
+      refreshStocks();
+    </script>
+  </body>
+</html>

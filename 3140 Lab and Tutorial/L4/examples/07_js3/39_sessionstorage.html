@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="welcome"></div>
+
+    <script>
+// sessionStorage.removeItem("numVisits");
+var welcome = document.getElementById("welcome");
+var numVisits = sessionStorage.getItem("numVisits");
+var numVisits = numVisits ? parseInt(numVisits) + 1 : 1;
+if (numVisits == 1) {
+  welcome.innerHTML = "First time here, welcome";
+} else {
+  welcome.innerHTML = "Welcome Back ("+ numVisits +")";
+}
+sessionStorage.setItem("numVisits", numVisits);
+    </script>
+  </body>
+</html>

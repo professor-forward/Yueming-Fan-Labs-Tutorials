@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <div id="myStuff">Hello World</div>
+
+    <span>Your</span> <span>World</span>
+
+    <button id="btn">Go</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("btn").onclick = function()
+      {
+        document.getElementById("myStuff").innerHTML = "Bonjour Monde";
+        var all = document.getElementsByTagName("span");
+        all[0].innerHTML = "Votre";
+        all[1].innerHTML = "Monde";
+      }
+
+    </script>
+
+  </body>
+</html>
+
+

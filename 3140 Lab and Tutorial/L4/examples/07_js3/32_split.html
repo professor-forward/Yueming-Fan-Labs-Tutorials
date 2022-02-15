@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(fn)
+{
+  var answer = eval(fn);
+  document.writeln(fn + " = " + answer + "<br>");
+}
+
+show('"three blind mice".split(" ")');
+show('"three;blind;mice".split(";")');
+show('"three,blind,mice".split()');
+
+show('"abcdefghijklmnopqrstuvwxyz".substring(0)');
+show('"abcdefghijklmnopqrstuvwxyz".substring(0, 5)');
+show('"abcdefghijklmnopqrstuvwxyz".substring(1, 5)');
+show('"abcdefghijklmnopqrstuvwxyz".substring(12)');
+show('"abcdefghijklmnopqrstuvwxyz".substring(12, 99)');
+
+"three blind mice".split(" ");
+"three;blind;mice".split(";");
+"three,blind,mice".split();
+
+"abcdefghijklmnopqrstuvwxyz".substring(0);
+"abcdefghijklmnopqrstuvwxyz".substring(0, 5);
+"abcdefghijklmnopqrstuvwxyz".substring(1, 5);
+"abcdefghijklmnopqrstuvwxyz".substring(12);
+"abcdefghijklmnopqrstuvwxyz".substring(12, 99);
+
+    </script>
+  </body>
+</html>
+
+

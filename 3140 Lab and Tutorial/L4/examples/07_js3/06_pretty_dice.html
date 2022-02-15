@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <style>
+      .dice {
+        margin: 10px;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+
+      .dice .middle {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+
+      .dice .top-left {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+
+      .dice .top-right {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+
+      .dice .bottom-left {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+      }
+
+      .dice .bottom-right {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+      }
+
+      .dice .middle-left {
+        position: absolute;
+        top: 40px;
+        left: 5px;
+      }
+
+      .dice .middle-right {
+        position: absolute;
+        top: 40px;
+        right: 5px;
+      }
+
+      .dot {
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px; 
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="dice" />
+      <div class="middle"><div class="dot"></div></div>
+    </div>
+
+    <div class="dice" />
+      <div class="top-left"><div class="dot"></div></div>
+      <div class="bottom-right"><div class="dot"></div></div>
+    </div>
+
+    <div class="dice" />
+      <div class="top-left"><div class="dot"></div></div>
+      <div class="middle"><div class="dot"></div></div>
+      <div class="bottom-right"><div class="dot"></div></div>
+    </div>
+
+    <div class="dice" />
+      <div class="top-left"><div class="dot"></div></div>
+      <div class="top-right"><div class="dot"></div></div>
+      <div class="bottom-left"><div class="dot"></div></div>
+      <div class="bottom-right"><div class="dot"></div></div>
+    </div>
+
+    <div class="dice" />
+      <div class="top-left"><div class="dot"></div></div>
+      <div class="top-right"><div class="dot"></div></div>
+      <div class="middle"><div class="dot"></div></div>
+      <div class="bottom-left"><div class="dot"></div></div>
+      <div class="bottom-right"><div class="dot"></div></div>
+    </div>
+
+    <div class="dice" />
+      <div class="top-left"><div class="dot"></div></div>
+      <div class="top-right"><div class="dot"></div></div>
+      <div class="bottom-left"><div class="dot"></div></div>
+      <div class="bottom-right"><div class="dot"></div></div>
+      <div class="middle-left"><div class="dot"></div></div>
+      <div class="middle-right"><div class="dot"></div></div>
+    </div>
+  </body>
+</html>

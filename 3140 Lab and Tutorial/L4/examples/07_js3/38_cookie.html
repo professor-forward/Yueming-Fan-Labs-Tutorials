@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="38_cookie.js"></script>
+  </head>
+  <body>
+
+    Last Visit: <span id="lastVisited"></span><br>
+    Current Date: <span id="now"></span>
+    <script type="text/javascript">
+      
+var lastDateStored = readCookie("lastDateStored");
+var now = new Date();
+createCookie("lastDateStored", now, 1);
+
+document.getElementById("lastVisited").innerHTML = lastDateStored ? lastDateStored : "Never";
+document.getElementById("now").innerHTML = now;
+    </script>
+  </body>
+</html>

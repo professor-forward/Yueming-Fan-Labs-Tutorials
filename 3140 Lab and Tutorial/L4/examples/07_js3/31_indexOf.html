@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(fn)
+{
+  var answer = eval(fn);
+  document.writeln(fn + " = " + answer + "<br>");
+}
+
+show('"three blind mice".indexOf("blind")');
+show('"three seeing mice".indexOf("blind")');
+show('"there are these things in the woods".lastIndexOf("the")');
+show('"there are these things in the woods".indexOf("the")');
+show('"there are these things in the woods".indexOf("the", 1)');
+show('"there are these things in the woods".indexOf("the", 11)');
+show('"there are these things in the woods".indexOf("the", 27)');
+show('"there are these things in the woods".lastIndexOf("the", 9)');
+show('"there are these things in the woods".lastIndexOf("the", 25)');
+
+"three blind mice".indexOf("blind");
+"three seeing mice".indexOf("blind");
+"there are these things in the woods".lastIndexOf("the");
+"there are these things in the woods".indexOf("the");
+"there are these things in the woods".indexOf("the", 1);
+"there are these things in the woods".indexOf("the", 11);
+"there are these things in the woods".indexOf("the", 27);
+"there are these things in the woods".lastIndexOf("the", 9);
+"there are these things in the woods".lastIndexOf("the", 25);
+
+    </script>
+  </body>
+</html>
+
+

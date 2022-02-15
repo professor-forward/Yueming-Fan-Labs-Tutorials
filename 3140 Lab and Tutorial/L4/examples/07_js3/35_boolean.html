@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(fn)
+{
+  var answer = eval(fn);
+  document.writeln(fn + " = " + answer + "<br>");
+}
+
+show('new Boolean(true)');
+show('new Boolean("James")');
+show('new Boolean("0")');
+show('new Boolean(false)');
+show('new Boolean(0)');
+show('new Boolean("")');
+show('new Boolean()');
+show('new Boolean(null)');
+show('new Boolean(NaN)');
+show('new Boolean(undefined)');
+
+new Boolean(true);
+new Boolean("James");
+new Boolean("0");
+new Boolean(false);
+new Boolean(0);
+new Boolean("");
+new Boolean();
+new Boolean(null);
+new Boolean(NaN);
+new Boolean(undefined);
+    </script>
+  </body>
+</html>
+
+

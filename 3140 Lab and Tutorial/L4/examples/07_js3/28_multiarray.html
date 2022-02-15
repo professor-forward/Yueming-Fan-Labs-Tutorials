@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+
+function show(name, ele, index)
+{
+  document.writeln(name + " of " + ele + " is " + index + "<br>");
+}
+
+var arr = [
+  ["Andrew", 38], 
+  ["Hayden", 6], 
+  ["Ayana", 38], 
+  ["August", 4]
+];
+
+arr.sort(function(a,b){
+  if (a[1] == b[1]) {
+    return a[0].localeCompare(b[0]);
+  } else {
+    return b[1] - a[1];
+  }
+})
+
+document.writeln(arr.join("<br>"));
+
+
+    </script>
+  </body>
+</html>
+
+
