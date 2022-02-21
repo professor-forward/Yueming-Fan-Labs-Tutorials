@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>t5-q9.9</title>
+		<script type="text/javascript">
+			function start() {
+				var button = document.getElementById("button");
+				button.addEventListener("click", displayResult, false);
+			}
+			/*var Point = (function() {
+				var entity = {'x': 0.0, 'y': 0.0};
+				entity.getX = function () {
+					return this.x;
+				}
+				entity.getY = function () {
+					return this.y;				
+				}
+				entity.setX = function (num) {
+					this.x = num;
+				}
+				entity.setY = function (num) {
+					this.y = num;
+				}
+				return entity;
+			}());*/
+
+			function distance(x1, y1, x2, y2) {
+				var xd = Math.abs(x1-x2);
+				var yd = Math.abs(y1-y2);
+				return Math.sqrt(xd*xd+yd*yd);
+			}
+			function displayResult() {
+				/*var point1 = new Point();
+				var str1 = document.getElementById("point1").value.substring(1, str1.length-2);
+				document.writeln("str1: "+str1);
+				point1.setX(parseFloat(str1.split(",")[0]));
+				document.write("x1: "+parseFloat(str1.split(",")[0]));
+				point.setY(parseFloat(str1.split(",")[1]));
+				document.write("y1: "+parseFloat(str1.split(",")[1]));
+				var point2 = new Point();
+				var str2 = document.getElementById("point2").value.substring(1, str2.length-2);
+				point2.setX(p arseFloat(str2.split(",")[0]));
+				point2.setY(parseFloat(str2.split(",")[1]));	
+				var result = document.getElementById("result");
+				result.innerHTML = "The distance of two points is: " + distance(point1, point2);*/
+				var x1 = parseFloat(document.getElementById("x1").value);
+				var y1 = parseFloat(document.getElementById("y1").value);
+				var x2 = parseFloat(document.getElementById("x2").value);
+				var y2 = parseFloat(document.getElementById("y2").value);
+				var result = document.getElementById("result");
+				result.innerHTML = "The distance between two points is: " + distance(x1, y1, x2, y2);
+			}
+			window.addEventListener("load", start, false);
+		</script>
+	</head>
+	<body>
+		<form action="#">
+			<p>
+				<label>x coordinate of point1: 
+					<input type="text" id="x1"></label><br>
+				<label>y coordinate of point1:
+					<input type="text" id="y1"></label><br>
+				<label>x coordinate of point2: 
+					<input type="text" id="x2"></label><br>
+				<label>y coordinate of point2:
+					<input type="text" id="y2"></label><br>
+				<button id="button">Calculate Distance</button>
+			</p>
+		</form>
+		<p id="result"></p>
+	</body>
+</html>

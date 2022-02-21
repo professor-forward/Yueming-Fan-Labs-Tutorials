@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>t5-q9.18</title>
+		<script type="text/javascript">
+			function start() {
+				var button = document.getElementById("button");
+				button.addEventListener("click", displayMin, false);
+			}
+			function minimum3(m1, m2, m3) {
+				return Math.min(Math.min(m1,m2), m3);
+			}
+			function displayMin() {
+				var m1 = parseFloat(document.getElementById("m1").value);
+				var m2 = parseFloat(document.getElementById("m2").value);
+				var m3 = parseFloat(document.getElementById("m3").value);
+				var result = document.getElementById("result");
+				result.innerHTML = "The minimum number is: " + minimum3(m1, m2, m3);
+			}
+			window.addEventListener("load", start, false);
+		</script>
+	</head>
+	<body>
+		<form action="#">
+			<input type="text" id="m1"><br>
+			<input type="text" id="m2"><br>
+			<input type="text" id="m3"><br>
+			<button id="button">minimum3</button>
+		</form>
+		<p id="result"></p>
+	</body>
+</html>

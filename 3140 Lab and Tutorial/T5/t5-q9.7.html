@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>t5-q9.7</title>
+		<script type="text/javascript">
+			function start() {
+				var button = document.getElementById("button");
+				button.addEventListener("click", displayArea, false);
+				
+			}
+			function displayArea() {
+				var inpputR = document.getElementById("radius");
+				var radius = parseFloat(inpputR.value);
+				var result = document.getElementById("result");
+				result.innerHTML = "Cricle area is: " + CircleArea(radius);
+			}
+			function CircleArea(radius) {
+				return radius*radius*Math.PI;
+			}
+			window.addEventListener("load", start, false);
+		</script>
+	</head>
+	<body>
+		<form action="#">
+			<p>
+				<label>Radius
+				<input type="text" id="radius"></label>
+				<button id="button">Calculate Area</button>
+			</p>
+		</form>
+		<p id="result"></p>
+	</body>
+</html>

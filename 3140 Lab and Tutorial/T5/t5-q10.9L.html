@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>t5-q10.9L</title>
+		<script type="text/javascript">
+			var t = new Array(2);
+			t[0] = new Array(3);
+			t[1] = new Array(3);
+			for (var i=0; i<t.length; i++) {
+				for (var j=0; j<t[i].length; j++) {
+					t[i][j] = 0;
+				}
+			}
+
+			document.writeln("<table border='1'>" +
+				"<tr><td>&nbsp</td>" +
+				"<th>1</th>" +
+				"<th>2</th>" +
+				"<th>3</th></tr>");
+			for (var i=0; i<t.length; i++) {
+				document.writeln("<tr><th>" + (i+1) +"</th>")
+				for (var j=0; j<t[i].length; j++) {
+					document.writeln("<td>" + t[i][j] + "</td>");
+				}
+				document.writeln("</tr>");
+			}
+			document.writeln("</table>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
