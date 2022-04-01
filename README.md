@@ -25,3 +25,21 @@ update operation
 delete operation
 ![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L9/delete.png)
 ![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L9/delete2.png)
+
+lab10
+CURD operation
+insert
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/insert.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/insert2.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/insert3.png)
+search
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/search.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/search2.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/search3.png)
+update
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/update.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/update2.png)
+delete
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/delete.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/pre-delete.png)
+![image](https://github.com/professor-forward/labs-and-tutorials-Yueming-Fan/blob/main/3140%20Lab%20and%20Tutorial/L10/post-delete.png)
